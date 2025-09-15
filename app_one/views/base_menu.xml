@@ -1,0 +1,52 @@
+<odoo>
+<menuitem
+        id="real_estate_root_menu"
+        name="Real Estate"
+    />
+
+    <menuitem
+        id="properties_menu"
+        name="Properties"
+        parent="real_estate_root_menu"
+    />
+
+    <menuitem
+        id="property_menu"
+        name="Property"
+        parent="properties_menu"
+        action="property_action"
+    />
+
+    <menuitem
+        id="building_menu"
+        name="Building"
+        parent="properties_menu"
+        action="building_action"
+    />
+    <menuitem
+        id="property_history_menu_item"
+        name="History"
+        parent="properties_menu"
+        action="property_history_action"
+    />
+
+    <menuitem
+        id="configuration_menu"
+        name="Configuration"
+        parent="real_estate_root_menu"
+    />
+
+    <menuitem
+        id="owner_menu"
+        name="Owners"
+        parent="configuration_menu"
+        action="owner_action"
+    />
+
+    <menuitem
+        id="tag_menu"
+        name="Tags"
+        parent="configuration_menu"
+        action="tag_action"
+    />
+</odoo>
